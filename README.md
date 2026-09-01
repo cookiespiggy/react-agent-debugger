@@ -13,6 +13,10 @@
 </div>
 
 <p align="center">
+  <strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
   <img src="./docs/assets/hero.png" alt="ReactAgentDebugger — automatic diagnosis, waterfall, and one-click Fork for ReAct agent runs" width="100%">
 </p>
 
