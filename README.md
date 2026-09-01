@@ -8,7 +8,7 @@
 [![OpenTelemetry](https://img.shields.io/badge/OTel-GenAI%20semconv%201.42.0-blueviolet)](https://opentelemetry.io)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?logo=typescript)](https://www.typescriptlang.org)
 [![Tests](https://img.shields.io/badge/regression-3%20suites-brightgreen)](#testing)
-[![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
+[![License](https://img.shields.io/badge/license-MIT-blue)](#license)
 
 </div>
 
