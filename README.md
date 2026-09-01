@@ -47,7 +47,7 @@ It is a **debugger**, not a dashboard. A dashboard shows you data and leaves the
 ## Quickstart (60 seconds, no API key)
 
 ```bash
-git clone <your-repo> && cd ReactAgentDebugger
+git clone https://github.com/cookiespiggy/react-agent-debugger.git && cd react-agent-debugger
 npm install
 
 # Terminal 1 — a fake LLM so replay works with zero setup
