@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   DevTools-inspired dark theme.
+
+   Colors are declared in @theme so Tailwind v4 generates matching utilities
+   (bg-canvas, text-fg-muted, border-line, ...) without a JS config file.
+--------------------------------------------------------------------------- */
+
+@theme {
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Fira Code", Menlo,
+    Consolas, monospace;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+
+  --color-canvas: #08090c;
+  --color-surface: #0f1116;
+  --color-surface-2: #15181f;
+  --color-surface-3: #1c202a;
+
+  --color-line: #21252f;
+  --color-line-strong: #2e3442;
+
+  --color-fg: #e7e9ef;
+  --color-fg-muted: #98a0b3;
+  --color-fg-subtle: #646c80;
+
+  --color-accent: #4cc2ff;
+  --color-accent-dim: #1d4a63;
+
+  --color-agent: #a78bfa;
+  --color-agent-dim: #3b2f63;
+  --color-model: #22d3ee;
+  --color-model-dim: #164e5b;
+  --color-tool: #fbbf24;
+  --color-tool-dim: #5c4415;
+  --color-retrieval: #34d399;
+  --color-retrieval-dim: #145c46;
+  --color-danger: #f87171;
+  --color-danger-dim: #5f2222;
+  --color-warn: #fbbf24;
+  --color-ok: #34d399;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin scrollbars — the waterfall is dense enough without chunky chrome. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-line-strong);
+  border-radius: 9999px;
+  border: 2px solid var(--color-canvas);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #3d4658;
+}
+
+/* Tabular figures keep token counts and timings from jittering as they change. */
+.nums {
+  font-variant-numeric: tabular-nums;
+}
